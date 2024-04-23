@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cashier.png" />
+    <None Remove="clipboard.png" />
+    <None Remove="clothes-neon-concept-vector-37795851.jpg" />
+    <None Remove="Image1.png" />
+    <None Remove="logo.png" />
+    <None Remove="logoo.png" />
+    <None Remove="padlock %281%29.png" />
+    <None Remove="padlock.png" />
+    <None Remove="password.png" />
+    <None Remove="power-off %281%29.png" />
+    <None Remove="power-off.png" />
+    <None Remove="security.png" />
+    <None Remove="switch.png" />
+    <None Remove="team.png" />
+    <None Remove="user.png" />
+    <None Remove="vector.jpg" />
+    <None Remove="кирпич.png" />
+    <None Remove="кирпич2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cashier.png" />
+    <Resource Include="clipboard.png" />
+    <Resource Include="clothes-neon-concept-vector-37795851.jpg" />
+    <Resource Include="Image1.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="logoo.png" />
+    <Resource Include="padlock (1).png" />
+    <Resource Include="padlock.png" />
+    <Resource Include="password.png" />
+    <Resource Include="power-off (1).png" />
+    <Resource Include="power-off.png" />
+    <Resource Include="security.png" />
+    <Resource Include="switch.png" />
+    <Resource Include="team.png" />
+    <Resource Include="user.png" />
+    <Resource Include="vector.jpg" />
+    <Resource Include="кирпич.png" />
+    <Resource Include="кирпич2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="productimages\" />
+  </ItemGroup>
+
+</Project>

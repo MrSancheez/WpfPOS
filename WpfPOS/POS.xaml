@@ -1,0 +1,80 @@
+﻿<Page x:Class="WpfPOS.POS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPOS"
+        mc:Ignorable="d"
+        Title="POS" Height="513" Width="817">
+    <Grid x:Name="add" Height="513" VerticalAlignment="Top">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/кирпич2.jpg"/>
+        </Grid.Background>
+
+        <Grid HorizontalAlignment="Left" Height="513" Margin="423,0,0,0" VerticalAlignment="Top" Width="377" Background="#FF481EBF">
+            <DataGrid x:Name="lProducts" HorizontalAlignment="Center" Height="464" VerticalAlignment="Top" Width="330" Margin="0,20,0,0" >
+                
+            </DataGrid>
+        </Grid>
+        <TextBox x:Name="product_ID" HorizontalAlignment="Left" Height="32" Margin="12,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" VerticalContentAlignment="Center"/>
+        <Label Content="ProductID" HorizontalAlignment="Left" Height="26" Margin="10,32,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <TextBox x:Name="product_name" HorizontalAlignment="Left" Height="32" Margin="239,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" VerticalContentAlignment="Center"/>
+        <Label Content="ProductName" HorizontalAlignment="Left" Height="26" Margin="239,31,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <TextBox x:Name="price" HorizontalAlignment="Left" Height="32" Margin="12,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" VerticalContentAlignment="Center"/>
+        <Label Content="Price" HorizontalAlignment="Left" Height="26" Margin="13,100,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <ComboBox x:Name="type" HorizontalAlignment="Left" Height="26" Margin="12,194,0,0" VerticalAlignment="Top" Width="172">
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
+        </ComboBox>
+        <Button x:Name="browse" Content="Browse" HorizontalAlignment="Left" Height="36" Margin="239,270,0,0" VerticalAlignment="Top" Width="172" Click="browse_btn_click" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD27516"/>
+                    <GradientStop Color="#FF9E6B20" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Grid HorizontalAlignment="Left" Height="158" Margin="239,104,0,0" VerticalAlignment="Top" Width="172" Background="Black">
+            <Image x:Name="product_image" HorizontalAlignment="Left" Height="140" VerticalAlignment="Top" Width="159" Margin="5,8,0,0"/>
+        </Grid>
+        <Button Content="Add" HorizontalAlignment="Left" Height="35" Margin="10,231,0,0" VerticalAlignment="Top" Width="80" Click="add_btn_click" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF087B34"/>
+                    <GradientStop Color="#FF13BB0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="delete" Content="Delete" HorizontalAlignment="Left" Height="35" Margin="104,231,0,0" VerticalAlignment="Top" Width="80" Click="delete_btn_click" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB31010"/>
+                    <GradientStop Color="#FFE40E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="update" Content="Update" HorizontalAlignment="Left" Height="35" Margin="10,271,0,0" VerticalAlignment="Top" Width="80" Click="update_btn_click" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0E5EA7"/>
+                    <GradientStop Color="#FF127BDE" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="fileName" HorizontalAlignment="Left" Height="34" Margin="239,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Visibility="Hidden"/>
+        <Label Content="Type" HorizontalAlignment="Left" Height="26" Margin="12,164,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" Height="35" Margin="104,270,0,0" VerticalAlignment="Top" Width="80" Click="search_btn_click" BorderBrush="{x:Null}" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF087B34"/>
+                    <GradientStop Color="#FF520DBB" Offset="0.45"/>
+                    <GradientStop Color="#FF4421A2" Offset="0.327"/>
+                    <GradientStop Color="#FF42239E" Offset="0"/>
+                    <GradientStop Color="#FF42239E" Offset="0.157"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
